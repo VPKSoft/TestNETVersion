@@ -11,11 +11,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Files\GitHub\TestNETCoreVersion\TestNETVersion\TestNETVersion.xml</DocumentationFile>
+    <DocumentationFile>C:\Files\GitHub\TestNETVersion\TestNETVersion\TestNETVersion.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\Files\GitHub\TestNETCoreVersion\TestNETVersion\TestNETVersion.xml</DocumentationFile>
+    <DocumentationFile>C:\Files\GitHub\TestNETVersion\TestNETVersion\TestNETVersion.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
