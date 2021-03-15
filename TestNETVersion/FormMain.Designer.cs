@@ -85,9 +85,9 @@ namespace TestNETVersion
             this.lbMaximumVersion.AutoSize = true;
             this.lbMaximumVersion.Location = new System.Drawing.Point(208, 78);
             this.lbMaximumVersion.Name = "lbMaximumVersion";
-            this.lbMaximumVersion.Size = new System.Drawing.Size(104, 15);
+            this.lbMaximumVersion.Size = new System.Drawing.Size(106, 15);
             this.lbMaximumVersion.TabIndex = 4;
-            this.lbMaximumVersion.Text = "Minimum version:";
+            this.lbMaximumVersion.Text = "Maximum version:";
             // 
             // lbMinimumVersionValue
             // 
