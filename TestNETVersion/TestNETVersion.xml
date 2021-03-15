@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestNETVersion</name>
+    </assembly>
+    <members>
+        <member name="T:TestNETVersion.ConsoleProcessRunner">
+            <summary>
+            A class to run a specified process either synchronously or asynchronously.
+            Implements the <see cref="T:System.IDisposable" />
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="M:TestNETVersion.ConsoleProcessRunner.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TestNETVersion.ConsoleProcessRunner"/> class.
+            </summary>
+        </member>
+        <member name="M:TestNETVersion.ConsoleProcessRunner.#ctor(System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:TestNETVersion.ConsoleProcessRunner"/> class.
+            </summary>
+            <param name="command">The command for the process to run.</param>
+            <param name="arguments">The arguments for the process to run.</param>
+        </member>
+        <member name="M:TestNETVersion.ConsoleProcessRunner.CreateProcess">
+            <summary>
+            Creates a new process using the <see cref="P:TestNETVersion.ConsoleProcessRunner.Command"/> and <see cref="P:TestNETVersion.ConsoleProcessRunner.Arguments"/> property values.
+            </summary>
+        </member>
+        <member name="M:TestNETVersion.ConsoleProcessRunner.RunProcess">
+            <summary>
+            Runs the process specified by the <see cref="P:TestNETVersion.ConsoleProcessRunner.Command"/> and <see cref="P:TestNETVersion.ConsoleProcessRunner.Arguments"/> properties.
+            </summary>
+            <returns>The exit code of the process.</returns>
+        </member>
+        <member name="M:TestNETVersion.ConsoleProcessRunner.RunProcessAsync">
+            <summary>
+            Runs the process asynchronously specified by the <see cref="P:TestNETVersion.ConsoleProcessRunner.Command"/> and <see cref="P:TestNETVersion.ConsoleProcessRunner.Arguments"/> properties.
+            </summary>
+            <returns>The exit code of the process.</returns>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.ProcessId">
+            <summary>
+            Gets the process identifier.
+            </summary>
+            <value>The process identifier.</value>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.Process">
+            <summary>
+            Gets or sets the process.
+            </summary>
+            <value>The process.</value>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.ProcessOutputBuilder">
+            <summary>
+            Gets the <see cref="T:System.Text.StringBuilder"/> instance for the process output.
+            </summary>
+            <value>The <see cref="T:System.Text.StringBuilder"/> instance for the process output.</value>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.ProcessErrorBuilder">
+            <summary>
+            Gets the <see cref="T:System.Text.StringBuilder"/> instance for the process error output.
+            </summary>
+            <value>The <see cref="T:System.Text.StringBuilder"/> instance for the process error output.</value>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.ProcessOutput">
+            <summary>
+            Gets the process output.
+            </summary>
+            <value>The process output.</value>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.ProcessError">
+            <summary>
+            Gets the process error output.
+            </summary>
+            <value>The process error output.</value>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.WorkingDirectory">
+            <summary>
+            Gets or sets the working directory of the process.
+            </summary>
+            <value>The working directory of the process.</value>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.Command">
+            <summary>
+            Gets or sets the command for the process.
+            </summary>
+            <value>The command for the process.</value>
+        </member>
+        <member name="P:TestNETVersion.ConsoleProcessRunner.Arguments">
+            <summary>
+            Gets or sets the arguments for the process.
+            </summary>
+            <value>The arguments for the process.</value>
+        </member>
+        <member name="M:TestNETVersion.ConsoleProcessRunner.Dispose">
+            <summary>
+            Disposes this instance.
+            </summary>
+        </member>
+        <member name="T:TestNETVersion.FormMain">
+            <summary>
+            The main form of the application.
+            Implements the <see cref="T:System.Windows.Forms.Form" />
+            </summary>
+            <seealso cref="T:System.Windows.Forms.Form" />
+        </member>
+        <member name="M:TestNETVersion.FormMain.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TestNETVersion.FormMain"/> class.
+            </summary>
+        </member>
+        <member name="F:TestNETVersion.FormMain.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TestNETVersion.FormMain.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TestNETVersion.FormMain.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TestNETVersion.NetVersionCheck">
+            <summary>
+            A class to check NET version using the 'dotnet' command.
+            </summary>
+        </member>
+        <member name="M:TestNETVersion.NetVersionCheck.GetMaxVersion(TestNETVersion.NetApplicationType)">
+            <summary>
+            Gets the maximum version of the specified NET application type.
+            </summary>
+            <param name="type">The type of the NET application.</param>
+            <returns>System.Nullable&lt;Version&gt;.</returns>
+        </member>
+        <member name="M:TestNETVersion.NetVersionCheck.GetMinVersion(TestNETVersion.NetApplicationType)">
+            <summary>
+            Gets the minimum version of the specified NET application type.
+            </summary>
+            <param name="type">The type of the NET application.</param>
+            <returns>System.Nullable&lt;Version&gt;.</returns>
+        </member>
+        <member name="M:TestNETVersion.NetVersionCheck.GetAllVersions(TestNETVersion.NetApplicationType)">
+            <summary>
+            Gets all NET versions for the specified application type.
+            </summary>
+            <param name="type">The type of the application.</param>
+            <returns>List&lt;Version&gt;.</returns>
+        </member>
+        <member name="M:TestNETVersion.NetVersionCheck.GetVersionFromLines(System.String,System.String)">
+            <summary>
+            Gets the version from output lines generated by the command: 'dotnet --list-runtimes'.
+            </summary>
+            <param name="lines">The lines.</param>
+            <param name="start">The start.</param>
+            <returns>List&lt;Version&gt;.</returns>
+        </member>
+        <member name="T:TestNETVersion.NetApplicationType">
+            <summary>
+            An enumeration for the NET application type to be used with the 'dotnet' command.
+            </summary>
+        </member>
+        <member name="F:TestNETVersion.NetApplicationType.AspNetCoreAll">
+            <summary>
+            The "Microsoft.AspNetCore.All".
+            </summary>
+        </member>
+        <member name="F:TestNETVersion.NetApplicationType.AspNetCoreApp">
+            <summary>
+            The "Microsoft.AspNetCore.App".
+            </summary>
+        </member>
+        <member name="F:TestNETVersion.NetApplicationType.NetCoreApp">
+            <summary>
+            The "Microsoft.NETCore.App".
+            </summary>
+        </member>
+        <member name="F:TestNETVersion.NetApplicationType.WindowsDesktopApp">
+            <summary>
+            The "Microsoft.WindowsDesktop.App".
+            </summary>
+        </member>
+        <member name="M:TestNETVersion.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>

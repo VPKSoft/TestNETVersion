@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Authors>VPKSoft</Authors>
+    <Description>A software containg suitable classes to check for NET or NET Core version.</Description>
+    <Copyright>Copyright © VPKSoft 2021</Copyright>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Files\GitHub\TestNETCoreVersion\TestNETVersion\TestNETVersion.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Files\GitHub\TestNETCoreVersion\TestNETVersion\TestNETVersion.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

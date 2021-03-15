@@ -1,3 +1,5 @@
+#region License
+/*
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -21,4 +23,29 @@ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-For more information, please refer to <https://unlicense.org>
+For more information, please refer to <http://unlicense.org/>
+*/
+#endregion
+
+using System;
+using System.Windows.Forms;
+
+namespace TestNETVersion
+{
+    internal static class Program
+    {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+#pragma warning disable IDE1006 // Naming Styles
+        private static void Main()
+#pragma warning restore IDE1006 // Naming Styles
+        {
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FormMain());
+        }
+    }
+}
